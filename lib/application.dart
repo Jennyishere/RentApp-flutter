@@ -22,7 +22,7 @@ class _ApplicationState extends State<Application> {
       title: 'Flutter Demo',
       theme: ThemeData(
      
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
       home: MyHomePage(),
       onGenerateRoute: router.generator,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluro/fluro.dart';
+import 'package:rentapp/not_found_page.dart';
 import 'package:rentapp/pages/home/index.dart';
 import 'package:rentapp/pages/user/login.dart';
 
@@ -23,7 +24,7 @@ static Handler _loginHandler = Handler(handlerFunc: (BuildContext context, Map<S
   static void configureRoutes(Router router) {
     router.notFoundHandler = Handler(
         handlerFunc: (BuildContext context, Map<String, List<String>> params) {
-      print("ROUTE WAS NOT FOUND !!!");
+     return NotFoundPage();
     });
     router.define(home, handler: _homeHandler);
     router.define(login, handler: _loginHandler);
