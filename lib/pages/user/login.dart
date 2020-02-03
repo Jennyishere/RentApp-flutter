@@ -49,7 +49,7 @@ class _LoginPageState extends State<LoginPage> {
                 Text('还没账号？'),
                 FlatButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, 'register');
+                    Navigator.pushReplacementNamed(context, 'register');
                   },
                   child: Text('去注册~'),
                   textColor: Colors.green,

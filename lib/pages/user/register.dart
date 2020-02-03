@@ -53,7 +53,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 Text('已有账号？'),
                 FlatButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, 'login');
+                    Navigator.pushReplacementNamed(context, 'login');
                   },
                   child: Text('去登录~'),
                   textColor: Colors.green,
