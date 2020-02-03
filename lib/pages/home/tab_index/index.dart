@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rentapp/pages/home/tab_index/index_navigator.dart';
 import 'package:rentapp/widgets/common_swipper.dart';
 
 class TabIndex extends StatelessWidget {
@@ -11,6 +12,7 @@ class TabIndex extends StatelessWidget {
       body: ListView(
         children: <Widget>[
           CommonSwiper(),
+          IndexNavigator(),
           Text('这里是内容')
         ],
       ),
