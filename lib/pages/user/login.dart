@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
+  const LoginPage({Key key}) : super(key: key);
+  @override
+  _LoginPageState createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
+  bool showPassword = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,9 +20,20 @@ class LoginPage extends StatelessWidget {
             decoration: InputDecoration(labelText: '用户名', hintText: '请输入用户名'),
           ),
           TextField(
-            decoration: InputDecoration(labelText: '密码', hintText: '请输入密码'),
+            obscureText: showPassword,
+            decoration: InputDecoration(
+              labelText: '密码', 
+              hintText: '请输入密码',
+              suffixIcon: IconButton(icon: Icon(showPassword?Icons.visibility_off:Icons.visibility), onPressed: () {
+                setState(() {
+                  showPassword = !showPassword;
+                });
+              })
+              ),
           ),
-          RaisedButton(child: Text('登录'), onPressed: () {}),
+          RaisedButton(child: Text('登录'), onPressed: () {
+            print('登录');
+          }),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
