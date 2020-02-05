@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rentapp/pages/home/tab_index/index_navigator_item.dart';
+import 'package:rentapp/widgets/common_image.dart';
 
 class IndexNavigator extends StatelessWidget {
   @override
@@ -17,7 +18,7 @@ class IndexNavigator extends StatelessWidget {
                   },
                   child: Column(
                     children: <Widget>[
-                      Image.asset(item.imgUrl,width: 40.0,),
+                      CommonImage(item.imgUrl,width: 40.0,),
                       Text(item.title,style: TextStyle(
                         fontSize: 14.0,
                         fontWeight: FontWeight.w500,

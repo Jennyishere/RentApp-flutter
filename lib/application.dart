@@ -1,6 +1,6 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
-import 'package:rentapp/pages/home/index.dart';
+import 'package:rentapp/pages/home/index.dart'; 
 import 'package:rentapp/pages/user/login.dart';
 import 'package:rentapp/routes.dart';
 
