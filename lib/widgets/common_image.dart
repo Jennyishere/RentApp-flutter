@@ -26,8 +26,9 @@ class CommonImage extends StatelessWidget {
           image: AdvancedNetworkImage(src,
               useDiskCache: true,
               cacheRule: CacheRule(maxAge: Duration(days: 7)),
-              timeoutDuration: Duration(seconds: 20)));
+              timeoutDuration: Duration(minutes: 1)));
     }
+   
     // 如果是本地图
     if (localUrlReg.hasMatch(src)) {
       return Image.asset(
