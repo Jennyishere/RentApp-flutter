@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rentapp/pages/home/info/index.dart';
 import 'package:rentapp/pages/home/tab_index/index_navigator.dart';
 import 'package:rentapp/pages/home/tab_index/index_recommond.dart';
 import 'package:rentapp/widgets/common_swipper.dart';
@@ -13,6 +14,7 @@ class TabIndex extends StatelessWidget {
           CommonSwiper(),
           IndexNavigator(),
           IndexRecommond(),
+          Info(showTitle:true),
           Text('这里是内容'),
         ],
       ),
