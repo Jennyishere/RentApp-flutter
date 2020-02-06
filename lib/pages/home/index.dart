@@ -1,13 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:rentapp/pages/home/tab_index/index.dart';
+import 'package:rentapp/pages/home/tab_info/index.dart';
 import 'package:rentapp/widgets/content_page.dart';
 
 // 1. 需要准备 4 个 tab 内容区（tabView）
 List<Widget> tabViewList = [
   TabIndex(),
   ContentPage(name: '搜索'),
-  ContentPage(name: '资讯'),
+  TabInfo(),
   ContentPage(name: '我的')
 ];
 // 2. 需要准备 4 个 BottomNavigationBarItem
